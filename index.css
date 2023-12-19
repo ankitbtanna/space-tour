@@ -1,0 +1,59 @@
+/* -------------------------- */
+/* Reset                      */
+/* -------------------------- */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+div,
+button,
+picture {
+    margin: 0;
+    /* margin-block-end: 0; */
+}
+
+/* Set up a body */ 
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */    
+input, textarea, select, button {
+    font: inherit;
+}
+
+/* Enable Smooth Scrolling */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Remove animations for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
