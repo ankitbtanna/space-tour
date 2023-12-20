@@ -79,7 +79,7 @@ html:focus-within {
 
 .container {
   padding-inline: 2em; /* left and right padding */
-  max-width: 60rem;
+  max-width: 80rem;
   margin-inline: auto; /* center the container */
 }
 
@@ -98,13 +98,4 @@ html:focus-within {
 .box {
   background-color: lightblue;
   padding: 3rem;
-}
-
-.call-to-action {
-  background-color: lightgreen;
-  --gap: 2rem;
-}
-
-.call-to-action-2 {
-  --gap: 8rem;
 }
