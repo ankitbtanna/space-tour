@@ -104,3 +104,7 @@ html:focus-within {
   background-color: lightgreen;
   --gap: 2rem;
 }
+
+.call-to-action-2 {
+  --gap: 8rem;
+}
