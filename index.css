@@ -70,3 +70,9 @@ html:focus-within {
     display: grid;
     gap: var(--gap, 1rem);
 }
+
+.container {
+    padding-inline: 2em; /* left and right padding */
+    max-width: 80rem;
+    margin-inline: auto; /* center the container */
+}
