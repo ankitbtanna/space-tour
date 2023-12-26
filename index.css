@@ -128,6 +128,25 @@ html:focus-within {
   margin-inline: auto; /* center the container */
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 80rem)) minmax(
+      2rem,
+      1fr
+    );
+  column-gap: var(--container-gap, 2rem);
+}
+
+.grid-container > *:first-child {
+  grid-column: 2;
+  outline: 1px solid red;
+}
+
+.grid-container > *:last-child {
+  grid-column: 3;
+  outline: 1px solid red;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -260,7 +279,7 @@ html:focus-within {
 .large-button {
   position: relative;
   padding: 0 2em;
-  display: grid;
+  display: inline-grid;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   place-content: center;
