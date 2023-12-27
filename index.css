@@ -137,6 +137,10 @@ html:focus-within {
   gap: var(--gap, 1rem);
 }
 
+.d-block {
+  display: block;
+}
+
 /* .flow > *:where(:not(:first-child)) */
 /* .flow > *:not(:first-child) */
 .flow > * + * {
