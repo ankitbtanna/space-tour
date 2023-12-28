@@ -202,6 +202,15 @@ html:focus-within {
   border: 0;
 }
 
+.skip-to-content:focus {
+  position: relative;
+  height: auto;
+  width: max-content;
+  clip: 0;
+  background-color: hsl(var(--clr-white) / 1);
+  color: hsl(var(--clr-dark) / 1);
+}
+
 /* colors */
 
 .bg-dark {
