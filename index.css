@@ -353,6 +353,11 @@ html:focus-within {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  background: hsl(var(--clr-white) / 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.51);
 }
 
 @media (max-width: 35rem) {
@@ -361,7 +366,6 @@ html:focus-within {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 30%;
-    background: black;
     list-style: none;
     padding: min(20rem, 15vh) 2rem;
     margin: 0;
