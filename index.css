@@ -381,10 +381,15 @@ html:focus-within {
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
   }
 
   .primary-navigation.underline-indicators > .active {
     border: 0;
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0);
   }
 
   /* Mobile never has hover affect */
