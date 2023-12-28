@@ -154,7 +154,6 @@ html:focus-within {
 }
 
 .grid-container {
-  border: 5px solid limegreen;
   display: grid;
   text-align: center;
   place-items: center;
