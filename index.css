@@ -354,10 +354,16 @@ html:focus-within {
   padding: 0;
   margin: 0;
 
-  background: hsl(var(--clr-white) / 0.1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.51);
+  background: hsl(var(--clr-dark) / 0.95);
+}
+
+@supports (backdrop-filter: blur(15px)) {
+  .primary-navigation {
+    background: hsl(var(--clr-white) / 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.51);
+  }
 }
 
 @media (max-width: 35rem) {
