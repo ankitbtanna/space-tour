@@ -400,7 +400,7 @@ html:focus-within {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    z-index: 3;
+    z-index: 4000;
     top: 2rem;
     right: 1rem;
     background: transparent;
@@ -410,6 +410,16 @@ html:focus-within {
     background-repeat: no-repeat;
     width: 1.5rem;
     aspect-ratio: 1;
+    cursor: pointer;
+  }
+
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url(./assets/shared/icon-close.svg);
+  }
+
+  .mobile-nav-toggle:focus-visible {
+    outline: 5px solid red;
+    outline-offset: 5px;
   }
 }
 
