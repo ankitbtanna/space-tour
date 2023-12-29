@@ -210,6 +210,7 @@ html:focus-within {
   padding: 0.5em 1em;
   margin-inline: auto;
   transform: translateY(-100%);
+  transition: transform 250ms ease-in;
 }
 
 .skip-to-content:focus {
