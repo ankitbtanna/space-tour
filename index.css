@@ -202,13 +202,18 @@ html:focus-within {
   border: 0;
 }
 
+.skip-to-content {
+  position: absolute;
+  z-index: 9999;
+  background: hsl(var(--clr-white));
+  color: hsl(var(--clr-dark));
+  padding: 0.5em 1em;
+  margin-inline: auto;
+  transform: translateY(-100%);
+}
+
 .skip-to-content:focus {
-  position: relative;
-  height: auto;
-  width: max-content;
-  clip: 0;
-  background-color: hsl(var(--clr-white) / 1);
-  color: hsl(var(--clr-dark) / 1);
+  transform: translateY(0);
 }
 
 /* colors */
