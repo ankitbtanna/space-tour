@@ -117,10 +117,17 @@
         </p>
       </article>
 
-      <img
-        class="crew-image"
-        src="assets/crew/image-douglas-hurley.png"
-        alt="Douglas Hurley" />
+      <picture class="crew-image">
+        <source
+          srcset="assets/crew/image-douglas-hurley.webp"
+          type="image/webp" />
+        <source
+          srcset="assets/crew/image-douglas-hurley.avif"
+          type="image/avif" />
+        <img
+          src="assets/crew/image-douglas-hurley.png"
+          alt="Douglas Hurley" />
+      </picture>
     </main>
   </body>
 </html>
