@@ -144,6 +144,10 @@ html:focus-within {
   display: block;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 /* .flow > *:where(:not(:first-child)) */
 /* .flow > *:not(:first-child) */
 .flow > * + * {
